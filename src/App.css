@@ -1,0 +1,58 @@
+/***** MAIN *****/
+
+html {
+    background-color: #000000;
+    color: #00ABAE;
+    /* border: solid 2px #00ABAE; */
+    /* border-radius: 5px; */
+    /* margin-left: 200px; */
+    /* margin-right: 200px; */
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/***** LIST ITEMS *****/
+
+.list {
+    /* text-align: center; */
+    /* background-color: aliceblue; */
+    /* margin-left: 550px; */
+    margin-left: 457px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: 'Quicksand';
+}
+
+/***** INPUT & BUTTONS *****/
+
+.stuff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* .add {
+    background-color: #808080;
+    color: #00ABAE;
+}
+
+.clear {
+    background-color: #808080;
+    color: #00ABAE;
+} */
+
+/***** TASK LEFT *****/
+
+.taskleft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00ABAE;
+    font-family: 'Quicksand';
+}
