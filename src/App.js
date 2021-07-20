@@ -16,7 +16,7 @@ function App() {
     if (storedTodos) setTodos(storedTodos)
   }, [])
 
-  /* Saving To-Dos Items To Local Storage */
+  /* Saving To-Do Items To Local Storage */
 
   useEffect(() => {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(todos))
@@ -41,6 +41,8 @@ function App() {
     })
     todoNameRef.current.value = null
   }
+
+  /* Clear Completed To-Do */
 
   function handleClearCompleted() {
     const newTodos = todos.filter(todo => !todo.complete)
