@@ -50,18 +50,20 @@ function App() {
   }
   return (
     <>
-    <div className='main'>
-      <h1 className='header'>TO DO LIST</h1>
-      <div className='list' >
-        <TodoList className='list' todos={todos} toggleTodo={toggleTodo} />
+      <div className='main-main'> 
+        <div className='main'>
+          <h1 className='header'>TO DO LIST</h1>
+          <div className='list-container' >
+            <TodoList className='list' todos={todos} toggleTodo={toggleTodo} />
+          </div>
+          <div className='stuff'>
+            <input className='stuff-item' ref={todoNameRef} type="text" />
+            <button className='add stuff-item' onClick={handleAddTodo}>Add Todo</button>
+            <button className='clear stuff-item' onClick={handleClearCompleted}>Clear Completed</button>
+          </div>
+          <div className='taskleft' >{todos.filter(todo => !todo.complete).length} tasks left.</div>
+        </div>
       </div>
-      <div className='stuff'>
-        <input ref={todoNameRef} type="text" />
-        <button className='add' onClick={handleAddTodo}>Add Todo</button>
-        <button className='clear' onClick={handleClearCompleted}>Clear Completed</button>
-      </div>
-      <div className='taskleft' >{todos.filter(todo => !todo.complete).length} tasks left.</div>
-    </div>
     </>
   )
 }
