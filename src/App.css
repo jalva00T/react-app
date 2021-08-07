@@ -3,18 +3,28 @@
 html {
     background-color: #000000;
     color: #00ABAE;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center; /* centers vertically */
+    justify-content: center; /* centers horizontally */
+    
+
 }
 
 .main-main {
-    margin: 0 auto;
+    /* background-color: blue; */
+    border: solid 2px #00ABAE;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
 }
 
 .main {
     border: solid 2px #00ABAE;
     border-radius: 5px;
     padding: 0 10px 20px 10px;
-    width: 6responsive00px;
-    margin: 0 auto;
+    width: 600px;
+    /* margin: auto; */
 }
 
 .header{
@@ -28,10 +38,13 @@ html {
 
 .list-container {
     font-family: 'Quicksand';
+    /* background-color: red; */
     width: 340px;
     margin: 0 auto;
-    text-align: center;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
 }
 
 /***** INPUT & BUTTONS *****/
